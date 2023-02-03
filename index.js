@@ -9,4 +9,11 @@ function booleanToString(b){
 function solution(str){
     return str.split("").reverse().join("");
   }
+//3
+function evenOrOdd(number) {
   
+    if (number%2===0){
+      return "Even"
+    }
+    return "Odd";
+  }
