@@ -17,3 +17,7 @@ function evenOrOdd(number) {
     }
     return "Odd";
   }
+  //4
+  function otherAngle(a, b) {
+    return (180-a-b);
+  }
