@@ -47,3 +47,12 @@ const quarterOf = (month) => {
 // Your code here
   
 //6
+function isDivisible(n, x, y) {
+  if (n%x==0 && n%y==0){
+    return true;
+  } else {
+    return false;
+  }
+}
+//7
+
