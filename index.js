@@ -64,5 +64,9 @@ function _if(bool, func1, func2) {
   
       
   }
-  
 //8
+function square(num) {
+  return num*num; 
+ }// Write the "square"-function here
+ 
+ //9
