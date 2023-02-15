@@ -56,3 +56,13 @@ function isDivisible(n, x, y) {
 }
 //7
 
+function _if(bool, func1, func2) {
+  if (bool === true){
+    return func1();
+  } 
+    return func2();
+  
+      
+  }
+  
+//8
