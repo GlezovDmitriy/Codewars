@@ -70,3 +70,7 @@ function square(num) {
  }// Write the "square"-function here
  
  //9
+ function past(h, m, s){
+    return h*60*60*1000+m*60*1000+s*1000;
+}
+//10
