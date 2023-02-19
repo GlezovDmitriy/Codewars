@@ -78,3 +78,20 @@ function sayHello(name) {
   return 'Hello, '+ name;
 }
 //11
+function repeatStr (n, s) {
+  let repeat = '';
+  for (let i=1; i<=n; i++){
+     repeat += s;
+  }
+  return repeat;
+}
+//12
+var cubeChecker = function(volume, side){
+  
+  if (volume/side/side ==side && side>0){
+    return true;
+  
+  } else 
+  {return false}
+};
+//13
