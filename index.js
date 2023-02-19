@@ -95,3 +95,7 @@ var cubeChecker = function(volume, side){
   {return false}
 };
 //13
+function greet() {
+  return "hello world!"
+};
+//14
