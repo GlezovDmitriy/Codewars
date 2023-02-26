@@ -99,3 +99,14 @@ function greet() {
   return "hello world!"
 };
 //14
+function strCount(str, letter){ 
+  let result=0;
+  for (let i=0; i<=str.length-1; i++) {
+    if (str[i]==letter) {
+       result++;
+    } 
+  } 
+  return result;
+}
+
+//15
