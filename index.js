@@ -142,8 +142,7 @@ var humanYearsCatYearsDogYears = function(humanYears) {
 
 function countSheeps(arrayOfSheep) {
   let sum =0;
-  
-  for (let i = 0; i<=arrayOfSheep.length; i++){
+    for (let i = 0; i<=arrayOfSheep.length; i++){
     if (arrayOfSheep[i]==true && arrayOfSheep[i]!=null && arrayOfSheep[i] !=undefined){
        sum+=1;
     } else continue;
@@ -152,4 +151,15 @@ function countSheeps(arrayOfSheep) {
 }
 
 //18
+
+function chromosomeCheck(sperm) {
+  if (sperm == 'XY'){
+    return "Congratulations! You're going to have a son."
+  } else {
+    return "Congratulations! You're going to have a daughter."
+  }
+}
+
+//19
+
 
