@@ -165,9 +165,18 @@ function chromosomeCheck(sperm) {
 function reverseWords(str){
   let arr = str.split(' ');
   let arr2   = arr.reverse();
-let result = arr2.join(' ');
+  let result = arr2.join(' ');
   return result; // reverse those words
 }
 
 //20
+function squareSum(numbers){
+  let summa =0;
+  for (let i=0; i<=numbers.length-1; i++){
+  summa += numbers[i]**2;
+  }
+     return summa; 
+}
+
+//21
 
