@@ -195,6 +195,10 @@ function xor(a, b) {
       
 }
 //23
-
+function mango(quantity, price){
+  let par;
+  par = Math.floor(quantity/3);
+   return price*(quantity - par);
+ }
 
 
