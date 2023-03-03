@@ -162,4 +162,12 @@ function chromosomeCheck(sperm) {
 
 //19
 
+function reverseWords(str){
+  let arr = str.split(' ');
+  let arr2   = arr.reverse();
+let result = arr2.join(' ');
+  return result; // reverse those words
+}
+
+//20
 
