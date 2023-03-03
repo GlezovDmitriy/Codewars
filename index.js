@@ -201,4 +201,13 @@ function mango(quantity, price){
    return price*(quantity - par);
  }
 
+//24
+function addLength(str) {
+  let arr = str.split(" ");
+  let arr2 =[];
+ for (let i = 0; i<=arr.length-1; i++){
+   arr2[i] = (arr[i]+' '+arr[i].length);
+ }
+  return arr2;
+}
 
