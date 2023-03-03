@@ -186,4 +186,15 @@ function litres(time) {
 }
 
 //22
+function xor(a, b) {
+  if (a === b) {
+    return false;
+  } else {
+    return true;
+  }
+      
+}
+//23
+
+
 
