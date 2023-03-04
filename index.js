@@ -211,3 +211,14 @@ function addLength(str) {
   return arr2;
 }
 
+//25 определить век по году
+
+function century(year) {
+  let a;
+  a = Math.ceil(year/100);
+  return a;
+}
+
+//26
+
+
