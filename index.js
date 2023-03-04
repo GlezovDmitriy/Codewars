@@ -238,4 +238,19 @@ function invert(array) {
   return array;
 }
 
-//28
+//28-29
+//29 Создайте функцию, вызываемую shortcut для удаления строчных гласных ( a, e, i, o, u) в заданной строке.
+
+function shortcut (str) {
+  let arr = str.split('');
+  let result;
+    for (let i=0; i<arr.length; i++){
+    if (arr[i] === 'a' || arr[i] === 'e' || arr[i] === 'i' || arr[i] === 'o' || arr[i] === 'u'){
+      delete arr[i];
+    } else {
+      continue
+    }
+       
+  }
+  return result = arr.join('');
+}
