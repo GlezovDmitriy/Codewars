@@ -228,3 +228,14 @@ function howManyLightsabersDoYouOwn(name) {
   return 0;
 }
 
+//27
+
+function invert(array) {
+  
+  for (let i = 0; i<=array.length-1; i++){
+    array[i] = -array[i];
+  }
+  return array;
+}
+
+//28
