@@ -220,5 +220,11 @@ function century(year) {
 }
 
 //26
-
+function howManyLightsabersDoYouOwn(name) {
+  let num;
+  if (name == 'Zach'){
+    return 18;
+  }
+  return 0;
+}
 
