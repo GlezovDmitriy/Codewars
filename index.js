@@ -254,3 +254,14 @@ function shortcut (str) {
   }
   return result = arr.join('');
 }
+
+//30 Учитывая непустой массив целых чисел, вернуть результат умножения значений вместе по порядку.
+
+function grow(arr){
+  let result = 1;
+  for (let i = 0; i<arr.length;i++){
+    result *= arr[i];
+  }
+  return result;
+
+}
