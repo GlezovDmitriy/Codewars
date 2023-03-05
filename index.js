@@ -306,4 +306,17 @@ function multiply(a, b){
   return a * b
  }
 
+ //35
+
  
+ String.prototype.toAlternatingCase = function () {
+  let newstr = '';
+ for (let i = 0; i< this.length; i++){
+   if ( this[i]== this[i].toUpperCase()) {
+    newstr += this[i].toLowerCase();
+} else {
+  newstr += this[i].toUpperCase();
+}
+ }
+ return newstr;
+}
