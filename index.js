@@ -329,3 +329,15 @@ function isPythagoreanTriple(arr) {
   return n1**2 + n2**2 === n3**2;
     
 }
+
+//37 max min в массиве
+
+var min = function(list){
+  return Math.min.apply( null, list );
+  
+}
+
+var max = function(list){
+  return Math.max.apply( null, list );
+   
+}
