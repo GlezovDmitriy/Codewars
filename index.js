@@ -265,3 +265,19 @@ function grow(arr){
   return result;
 
 }
+
+ //31 Напишите функцию RemoveExclamationMarks, которая удаляет все восклицательные знаки из заданной строки.
+
+ function removeExclamationMarks(str) {
+  let arr = str.split('');
+  let str1;
+  for (let i = 0; i<arr.length; i++){
+    if(arr[i] == '!'){
+      delete arr[i]
+    } else continue;
+  }
+  str1 = arr.join('');
+  return str1;
+}
+
+
