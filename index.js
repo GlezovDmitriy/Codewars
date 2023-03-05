@@ -300,3 +300,10 @@ var summation = function (num) {
   return sum;
 }
 
+//34
+
+function multiply(a, b){
+  return a * b
+ }
+
+ 
