@@ -306,9 +306,9 @@ function multiply(a, b){
   return a * b
  }
 
- //35
+ //35 каждая строчная буква становилась прописной, а каждая прописная буква — строчной
 
- 
+
  String.prototype.toAlternatingCase = function () {
   let newstr = '';
  for (let i = 0; i< this.length; i++){
@@ -320,3 +320,11 @@ function multiply(a, b){
  }
  return newstr;
 }
+
+//36 можно составить пифагорейскую тройку, используя эти 3 целых числа
+
+function isPythagoreanTriple(arr) {
+  const [n1, n2, n3] = arr;
+      return n1**2 + n2**2 === n3**2;
+      
+  }
