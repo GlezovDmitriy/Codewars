@@ -280,4 +280,13 @@ function grow(arr){
   return str1;
 }
 
+//32 принимает неотрицательное целое число nв качестве входных данных и возвращает список всех степеней 2с показателем степени от 0до n
+
+function powersOfTwo(n){
+  let arr = [];
+  for (let i = 0; i<=n; i++){
+    arr.push(2**i);
+  }
+  return arr;
+}
 
