@@ -324,7 +324,8 @@ function multiply(a, b){
 //36 можно составить пифагорейскую тройку, используя эти 3 целых числа
 
 function isPythagoreanTriple(arr) {
+  arr.sort(( n1, n2 ) => n1 - n2); 
   const [n1, n2, n3] = arr;
-      return n1**2 + n2**2 === n3**2;
-      
-  }
+  return n1**2 + n2**2 === n3**2;
+    
+}
