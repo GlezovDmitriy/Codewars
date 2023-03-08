@@ -460,3 +460,11 @@ function popElement(arr){
   return arr;
 }
 
+//43 object
+
+
+function animal(obj){
+      
+  return "This "+obj["color"]+" "+obj["name"]+" has "+obj["legs"]+" legs.";
+}
+
