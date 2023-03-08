@@ -357,6 +357,13 @@ function find(arr, el) {
   
 }
 
+//39 создать функцию
+
+function helloWorld (){
+  let str = 'Hello World!'
+  console.log( str );
+}
+
 //
 
 
