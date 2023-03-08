@@ -351,3 +351,12 @@ function find(arr, el) {
   return arr.indexOf(el);
 }
 
+// еще вариант короче
+function find(arr, el) {
+  return (arr.indexOf(el) === -1)? "Not found" : arr.indexOf(el);
+  
+}
+
+//
+
+
