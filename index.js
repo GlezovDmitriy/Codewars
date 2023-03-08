@@ -468,3 +468,15 @@ function animal(obj){
   return "This "+obj["color"]+" "+obj["name"]+" has "+obj["legs"]+" legs.";
 }
 
+
+//44  0, -0, "", null, undefined, NaN == false
+
+function trueOrFalse(val){
+  if (val == false || 
+     val == 0 ||
+     val == -0 ||
+     val == null ||
+     val == undefined ||
+     val == NaN)    return 'false';             
+  else     return 'true';
+}
