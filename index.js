@@ -341,3 +341,13 @@ var max = function(list){
   return Math.max.apply( null, list );
    
 }
+
+//38 найти индккс элемента
+
+function find(arr, el) {
+  if (arr.indexOf(el) === -1){
+  return "Not found";
+} else
+  return arr.indexOf(el);
+}
+
