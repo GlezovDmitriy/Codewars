@@ -486,3 +486,31 @@ function trueOrFalse(val){
 function saleHotdogs(n){
   return n<5? n*100 : n<10? n*95 : n*90;
 }
+
+//46 switch
+
+function howManydays(month){
+  var days;
+  switch (month){
+    case 4:
+      days = 30;
+      break;
+      case 6:
+      days = 30;
+      break;
+      case 9:
+      days = 30;
+      break;
+      case 11:
+      days = 30;
+      break;
+      case 2:
+      days = 28;
+      break;
+      default: 
+      days = 31;
+  }
+  return days;
+}
+
+//47
