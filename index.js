@@ -527,6 +527,19 @@ function padIt(str,n){
 }
 
 return str;
+}
 
+//48 четные-нечетные в отд.массив
 
+function pickIt(arr){
+  var odd=[],even=[];
+  for (let i =0; i<arr.length; i++){
+    if(arr[i]%2 == 0){
+      even.push(arr[i]);
+    } else{
+      odd.push(arr[i]);
+    }
+  }
+   
+  return [odd,even];
 }
