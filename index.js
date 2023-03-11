@@ -560,3 +560,21 @@ function grabDoll(dolls){
   
   return bag;
 }
+
+//50 Если длина клча 5 или значения- 5, то добавить в массив.
+
+function giveMeFive(obj){
+  let arr = [];
+  for (let key in obj){
+    if (key.length == 5 && obj[key].length == 5){
+      arr.push(key);
+      arr.push(obj[key]);
+    } else if(key.length == 5 && obj[key].length !== 5){
+      arr.push(key);
+    } else if(key.length !== 5 && obj[key].length == 5){
+      arr.push(obj[key]);
+    } else 
+      continue;
+  }
+  return arr;
+}
