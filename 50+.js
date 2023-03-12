@@ -49,3 +49,13 @@ function findDifference(a, b) {
       return 0;
     }
   }
+
+  //57
+
+  function buildString(...template){
+    return `I like ${template.join(', ')}!`;
+  }
+
+ //58
+ 
+ 
