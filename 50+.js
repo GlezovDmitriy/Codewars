@@ -35,3 +35,17 @@ const stringToNumber = function(str){
     } else 
       return false;
   };
+
+//56 разница объёмов
+
+function findDifference(a, b) {
+    let v1  = a[0]*a[1]*a[2];
+    let v2  = b[0]*b[1]*b[2];
+    if (v1 > v2){
+      return v1-v2;
+    } else if (v2 > v1){
+      return v2-v1;
+    } else if(v1 == v2){
+      return 0;
+    }
+  }
