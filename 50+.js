@@ -24,3 +24,14 @@ const stringToNumber = function(str){
     // put your code here
     return str*1;
   }
+
+ //55 литры, миль/на литр, мили.
+ 
+ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+    if(fuelLeft ==0 ){
+      return false;
+    } else if ( mpg*fuelLeft >= distanceToPump ){
+      return true;
+    } else 
+      return false;
+  };
