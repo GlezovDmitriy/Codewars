@@ -56,6 +56,16 @@ function findDifference(a, b) {
     return `I like ${template.join(', ')}!`;
   }
 
- //58
+ //58 удалить из строки все пробелы и вывести строку без них
  
- 
+ function noSpace(x){
+str = '';
+let arr = x.split(' ');
+  let arr2 =[];
+  for(let i =0; i<=arr.length; i++){
+    if (arr[i] !== ' '){
+      arr2.push(arr[i]);
+    }else continue;
+  }
+  return arr2.join('');
+}
