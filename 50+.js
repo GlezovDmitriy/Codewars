@@ -85,3 +85,10 @@ function bmi(w, h) {
   }
   
 }
+
+
+//60
+
+var a = "code";
+var b = "wa.rs";
+var name = a + b;
