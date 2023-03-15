@@ -69,3 +69,19 @@ let arr = x.split(' ');
   }
   return arr2.join('');
 }
+
+//59 индекс массы тела
+
+function bmi(w, h) {
+  let imt = w / h**2;
+  if( imt <=18.5){
+    return  "Underweight";
+  } else if( imt >18.5 && imt <=25){
+    return  "Normal";
+  } else if( imt >25 && imt <=30){
+    return  "Overweight";
+  } else {
+    return "Obese";
+  }
+  
+}
