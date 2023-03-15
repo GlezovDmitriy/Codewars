@@ -103,3 +103,16 @@ function hoopCount (n){
   }
   
 }
+
+//62
+
+function lovefunc(f1, f2){
+  if(f1%2 ==0 && f2%2 !== 0){
+    return true;
+  } else if( f1%2 !==0 && f2%2 == 0){
+    return true;
+  } else 
+    return false;
+}
+
+//63
