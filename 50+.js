@@ -137,5 +137,26 @@ function removeChar(str){
   return st;
 };
 
+//66 Если длина ключа равна 5, то поместите ключ в свой массив. Отдельно,
+//   если длина значения равна 5, то поместите значение в свой массив.
+
+function giveMeFive(obj){
+  let arr = [];
+  for (let key in obj){
+    if (key.length == 5 && obj[key].length == 5){
+      arr.push(key);
+      arr.push(obj[key]);
+    } else if(key.length == 5 && obj[key].length !== 5){
+      arr.push(key);
+    } else if(key.length !== 5 && obj[key].length == 5){
+      arr.push(obj[key]);
+    } else 
+      continue;
+  }
+  return arr;
+}
+
+//67
+ 
 
 
