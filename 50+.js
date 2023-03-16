@@ -132,3 +132,10 @@ var totalGoals = laLigaGoals + championsLeagueGoals + copaDelReyGoals;
 
 //65
 
+function removeChar(str){
+  let st = str.slice(1, str.length-1) ;
+  return st;
+};
+
+
+
