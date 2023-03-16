@@ -116,3 +116,10 @@ function lovefunc(f1, f2){
 }
 
 //63
+
+function addFive(num) {
+  let total = num + 5
+  return total
+}
+
+//64
