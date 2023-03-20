@@ -164,7 +164,18 @@ function sumStr(a,b) {
   return sum;
 }
 
-//68
+//68 среднее значение данного массива, округленное до ближайшего целого числа.
+ 
+function getAverage(marks){
+  let sum = 0;
+  let medium;
+   for (let i=0; i < marks.length; i++){
+     sum += marks[i];
+     medium = sum/marks.length;
+   }
+   return Math.floor(medium);
+ }
+ 
  
 
 
