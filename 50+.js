@@ -237,3 +237,12 @@ function problem(x){
 
 //73
 
+function fixTheMeerkat(arr) {
+  let arr1 = [];
+   arr1.push(arr[2]);
+   arr1.push(arr[1]);
+   arr1.push(arr[0]);
+   return arr1;
+ }
+
+ 
