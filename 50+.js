@@ -260,5 +260,27 @@ function doubleInteger(i) {
   return i*2;
 }
 
-//76
+//76 Count of positives / sum of negatives
 
+
+
+function countPositivesSumNegatives(input) {
+  let arr = [];
+  let num = 0;
+  let sum = 0;
+  if (input === null || input.length == 0){
+    return arr;
+  }
+  for(let i=0; i<input.length; i++){
+    if(input[i]>0){
+      num+=1;
+    }else if (input[i]<0){
+      sum+=input[i];
+    }else if (input[i] == 0){
+     
+    }
+  }
+  arr.push(num);
+  arr.push(sum);
+  return arr;
+}
