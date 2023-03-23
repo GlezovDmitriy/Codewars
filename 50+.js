@@ -253,3 +253,12 @@ function fixTheMeerkat(arr) {
   else {
     return false};
 }
+
+//75
+
+function doubleInteger(i) {
+  return i*2;
+}
+
+//76
+
