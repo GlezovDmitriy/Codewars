@@ -262,8 +262,6 @@ function doubleInteger(i) {
 
 //76 Count of positives / sum of negatives
 
-
-
 function countPositivesSumNegatives(input) {
   let arr = [];
   let num = 0;
@@ -284,3 +282,17 @@ function countPositivesSumNegatives(input) {
   arr.push(sum);
   return arr;
 }
+
+//77
+
+function monkeyCount(n) {
+  let arr = [];
+  let num = 0;
+  for (let i =1; i<= n; i++){
+    num+=1;
+    arr.push(num);
+  }
+  return arr;
+}
+
+//78
