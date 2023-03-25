@@ -322,5 +322,12 @@ function makeNegative(num) {
 }
 
 //80
+function dutyFree(normPrice, discount, hol){
+  let count = hol / (normPrice*discount /100);
+   return Math.floor(count);
+ }
+
+//81
+
 
 
