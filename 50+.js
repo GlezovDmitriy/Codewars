@@ -315,3 +315,12 @@ function makeNegative(num) {
 
  //79
 
+ function mystery() {
+  var results = 
+    {sanity: 'Hello'};
+  return results;
+}
+
+//80
+
+
