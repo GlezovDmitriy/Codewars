@@ -362,7 +362,24 @@ function makeUpperCase(str) {
 
  //84
 
- 
+ function oddCount(n){
+  let count = 0;
+  let num = n-1;
+  for(let i = num; i>0; i--){
+    if(i%2 !== 0) count+=1;
+    else continue;
+  }
+  return count;
+}
+
+// variant #2
+
+function oddCount(n){
+   return Math.floor(n/2);
+} 
+
+//85
+
 
 
 
