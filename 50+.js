@@ -327,7 +327,25 @@ function dutyFree(normPrice, discount, hol){
    return Math.floor(count);
  }
 
-//81
+//81 просуммировать различия между последовательными парами в массиве в порядке убывания.
+
+function sumOfDifferences(arr) {
+  let sum = 0;
+  if( arr.length == 0 || arr.length == 1  )
+    return 0;
+  let arr2 = arr.sort(function sN(a,b){return b-a});
+    for(let i=0; i<=arr2.length-2; i++){
+    sum += (arr2[i]-arr2[i+1]);
+  }
+  return sum;
+}
+
+//82
+
+
+
+
+
 
 
 
