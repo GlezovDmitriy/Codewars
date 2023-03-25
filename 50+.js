@@ -379,6 +379,17 @@ function oddCount(n){
 } 
 
 //85
+function first(arr, n) {
+  let arr2 = [];
+  if (n == 0) return [];
+  else if(n == null) return arr.slice(0, 1);
+  else return arr.slice(0, n);
+}
+
+//86
+
+
+
 
 
 
