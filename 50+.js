@@ -306,3 +306,12 @@ function makeNegative(num) {
     return 0;
   }
  }
+
+ //78/2
+ function makeNegative(num) {
+  let ans = (num<0)? num :(num>0)? -num : num;
+   return ans;
+ }
+
+ //79
+
