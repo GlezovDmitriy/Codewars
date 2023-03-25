@@ -356,6 +356,13 @@ function basicOp(operation, value1, value2)
 }
 
 //83
+function makeUpperCase(str) {
+  return str.toUpperCase();
+ }
+
+ //84
+
+ 
 
 
 
