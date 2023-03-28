@@ -409,6 +409,20 @@ function whatday(num) {
 
 //87
 
+function sortMyString(S) {
+  let str= '';
+ let str1= '';
+ let str2= '';
+ for (let i = 0; i<S.length; i+=2){
+   str1+= S[i];
+ }
+ for (let j = 1; j<S.length; j+=2){
+   str2 += S[j];
+ }
+   return str1 +' '+ str2;
+}
+
+
 
 
 
