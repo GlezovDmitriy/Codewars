@@ -463,6 +463,17 @@ const areaOrPerimeter = function(l , w) {
    
  };
 
+ //92
+
+ function feast(beast, dish) {
+  //let arr1 = beast.split();
+  //let arr2 = dish.split();
+if (beast[0] === dish[0] && beast[beast.length-1] === dish[dish.length-1] ){
+  return true;
+} else return false;
+}
+
+//93
 
 
 
