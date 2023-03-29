@@ -432,6 +432,29 @@ function getRealFloor(n) {
   } else return n;
 }
 
+//89
+
+function unusualFive() {
+  let str = '     '
+  return str.length;
+  
+}
+
+//90
+
+// Sum Numbers
+function sum (numbers) {
+  let sum = 0;
+  if (numbers.length == 0){
+    return 0;
+  }
+  for (let i =0; i<numbers.length; i++){
+    sum += numbers[i];
+  }
+       return sum;
+};
+
+//91
 
 
 
