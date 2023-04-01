@@ -530,8 +530,16 @@ function multipleOfIndex(array) {
     }return arr;
 }
 
-//97
+//97 Создайте метод, который принимает список и элемент и возвращает значение, 
+// true если элемент принадлежит списку, в противном случае false.
 
+
+
+function include(arr, item){
+  if (arr.includes( item )){
+    return true;
+  } else return false;
+ }
 
 
 
