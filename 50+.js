@@ -485,6 +485,27 @@ function giveChange(amount) {
 return arr;
 }
 
+// //94  принимает отсортированный массив ary и значение val и
+//  возвращает наименьший индекс, куда вы можете вставить val,
+//   чтобы сохранить отсортированность массив. Входной массив
+//    всегда будет отсортирован в порядке возрастания. Он может
+//     содержать дубликаты.
+
+function keepOrder(ary, val) {
+  if(ary.length == 0){
+      return 0;
+    };
+  for (let i =0; i<ary.length; i++){
+    if( val > ary[ary.length - 1]){
+      return ary.length;
+    }
+    else if(val <= ary[i] ){
+      return i;
+    } else continue;
+    }
+    
+}
+
 
 
 
