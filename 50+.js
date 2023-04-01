@@ -471,7 +471,21 @@ const areaOrPerimeter = function(l , w) {
 } else return false;
 }
 
-//93
+//93 мы разбили 365 долларов на 1 купюру по 5 долларов, 
+// 1 банкноту на 10 долларов, 1 купюру на 50 долларов и 3 купюры на 100 долларов:
+
+function giveChange(amount) {
+  let arr = [0,0,0,0,0,0];
+  arr[5] = Math.floor(amount / 100);
+  arr[4] = Math.floor((amount - (arr[5] * 100)) / 50);
+  arr[3] = Math.floor((amount - (arr[5] * 100)- (arr[4] * 50)) / 20);
+  arr[2] = Math.floor((amount - (arr[5] * 100)- (arr[4] * 50)-(arr[3]*20)) / 10);
+  arr[1] = Math.floor((amount - (arr[5] * 100)- (arr[4] * 50)-(arr[3]*20)-(arr[2]*10)) / 5);
+  arr[0] = Math.floor((amount - (arr[5] * 100)- (arr[4] * 50)-(arr[3]*20)-(arr[2]*10)-(arr[1]*5)) / 1);
+return arr;
+}
+
+
 
 
 
