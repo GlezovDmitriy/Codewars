@@ -519,6 +519,20 @@ function multiTable(n) {
   return str;
 }
 
+//96 Возвращает новый массив, состоящий из элементов, кратных их собственному индексу во входном массиве (длина > 1).
+
+function multipleOfIndex(array) {
+  let arr = [];
+  for( let i = 1; i<array.length; i++){
+    if(array[i]%i == 0) {
+       arr.push(array[i]);
+    } else continue;
+    }return arr;
+}
+
+//97
+
+
 
 
 
