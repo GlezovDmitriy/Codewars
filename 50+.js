@@ -548,6 +548,19 @@ function check(a,x){
   } else return false;
 };
 
+//99 получаете массив с результатами тестов ваших сверстников. Теперь посчитайте среднее и сравните свой результат!
+
+function betterThanAverage(classPoints, yourPoints) {
+  let midle;
+  for (let i=0; i<classPoints.length; i++){
+    sum+= classPoints[i];
+  }
+  if(sum/classPoints.length < yourPoints) return true;
+  else return false;
+}
+
+
+
 
 
 
