@@ -506,6 +506,18 @@ function keepOrder(ary, val) {
     
 }
 
+//95 таблица умножуния
+
+function multiTable(n) {
+  let i =1;
+  let str = '';
+  while (i<=9){
+     str += `${i} * ${n} = ${n*i}\n`;
+    i++;
+  }
+    str += `${10} * ${n} = ${n*10}`;
+  return str;
+}
 
 
 
