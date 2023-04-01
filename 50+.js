@@ -534,14 +534,19 @@ function multipleOfIndex(array) {
 // true если элемент принадлежит списку, в противном случае false.
 
 
-
 function include(arr, item){
   if (arr.includes( item )){
     return true;
   } else return false;
  }
 
+//98 содержит ли предоставленный массив значение, не используя цикл.
 
+function check(a,x){
+  if (a.includes( x )){
+    return true;
+  } else return false;
+};
 
 
 
