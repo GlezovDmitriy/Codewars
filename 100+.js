@@ -22,5 +22,12 @@ function greet(name){
     return `Hello, ${name} how are you doing today?`
   }
 
+//104 Определите функцию, которая удаляет дубликаты из массива чисел и возвращает его в качестве результата.
+
+function distinct(a) {
+    let arr = [...new Set(a)];
+      return arr;
+    }
+
 //105
-  
+    
