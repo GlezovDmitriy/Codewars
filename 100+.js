@@ -50,3 +50,18 @@ function mouthSize(animal) {
   }
 
 //108  
+
+function billboard(name, price = 30){
+    let sum = 0;
+    if( price !== 30){
+      for (let i = 0; i<name.length; i++){
+      sum+= price;
+      }
+    } else { 
+      for (let i = 0; i<name.length; i++){
+      sum+= 30;
+      }
+    }
+    
+   return sum;
+  } 
