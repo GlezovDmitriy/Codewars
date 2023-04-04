@@ -16,4 +16,11 @@ function boolToWord (bool) {
     else return 'No';
     }
 
-    //103    
+//103    
+
+function greet(name){
+    return `Hello, ${name} how are you doing today?`
+  }
+
+//105
+  
