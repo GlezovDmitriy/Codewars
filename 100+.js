@@ -65,3 +65,18 @@ function billboard(name, price = 30){
     
    return sum;
   } 
+
+//109
+
+var countSheep = function (num){
+    let str = '';
+    if (num == 0) return '';
+    else {//if (num == 1) return '1 sheep...';
+    for (let i=0; i < num; i++){
+      str += `${num/num + i} sheep...`;
+      
+    }
+      }
+    return str;
+  }
+  
