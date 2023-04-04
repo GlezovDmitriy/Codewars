@@ -29,5 +29,9 @@ function distinct(a) {
       return arr;
     }
 
-//105
-    
+//105 найти N-ю степень элемента в массиве с индексом N. Если N вне массива, то вернуть -1.
+ 
+function index(array, n){
+    if ( n > array.length-1) return -1;
+    else return array[n]**n;
+  }
