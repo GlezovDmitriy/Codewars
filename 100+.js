@@ -79,4 +79,15 @@ var countSheep = function (num){
       }
     return str;
   }
-  
+ 
+//110
+
+function checkAlive (health) {
+    if (health <= 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+//111  
