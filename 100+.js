@@ -35,3 +35,10 @@ function index(array, n){
     if ( n > array.length-1) return -1;
     else return array[n]**n;
   }
+
+//106
+
+function seatsInTheater(nCols, nRows, col, row) {
+    return ((nCols-col+1) * (nRows-row));
+       
+   }
