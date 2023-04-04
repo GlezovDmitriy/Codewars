@@ -8,3 +8,12 @@ function testEven(n) {
     }
     
   }
+
+//102
+
+function boolToWord (bool) {
+    if (bool === true) return 'Yes';
+    else return 'No';
+    }
+
+    //103    
