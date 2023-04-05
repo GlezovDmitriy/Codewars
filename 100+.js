@@ -91,3 +91,9 @@ function checkAlive (health) {
   }
 
 //111  
+
+function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
+    return laLigaGoals + copaDelReyGoals +championsLeagueGoals;
+  }
+
+  
