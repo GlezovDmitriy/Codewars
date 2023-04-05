@@ -96,4 +96,12 @@ function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return laLigaGoals + copaDelReyGoals +championsLeagueGoals;
   }
 
-  
+//112
+
+function move (position, roll) {
+  return position + roll*2;
+}
+
+//113
+
+
