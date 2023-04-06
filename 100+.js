@@ -129,3 +129,14 @@ function squareOrSquareRoot(arr) {
   }
   return arr;  
 }
+
+//116
+
+function getGrade (s1, s2, s3) {
+  let s = (s1+s2+s3) / 3;
+  if (s < 60) return 'F';
+  else if (s < 70) return 'D';
+  else if (s < 80) return 'C';
+  else if (s < 90) return 'B';
+  else if (s <= 100) return 'A';
+}
