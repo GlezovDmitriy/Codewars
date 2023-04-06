@@ -160,3 +160,10 @@ arr.forEach(function sumNumber( num ) {
 );
  return sum;
 }
+
+//119
+
+function greet (name, owner) {
+  if (name == owner) return 'Hello boss';
+  else return 'Hello guest';
+}
