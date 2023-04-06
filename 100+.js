@@ -167,3 +167,18 @@ function greet (name, owner) {
   if (name == owner) return 'Hello boss';
   else return 'Hello guest';
 }
+
+//120
+
+function rentalCarCost(d) {
+  let sum;
+   if (d < 3){
+     sum = d * 40;
+   } else if (d>= 3 && d<7){
+     sum = d*40 -20; 
+   } else if (d>= 7){
+     sum = d*40 -50; 
+   }
+   return sum;
+ }
+
