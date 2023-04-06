@@ -140,3 +140,13 @@ function getGrade (s1, s2, s3) {
   else if (s < 90) return 'B';
   else if (s <= 100) return 'A';
 }
+
+//117
+
+function paperwork(n, m) {
+  if(n<0 || m<0) return 0;
+  return n*m;
+  
+}
+
+//118
