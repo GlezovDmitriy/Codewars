@@ -149,4 +149,14 @@ function paperwork(n, m) {
   
 }
 
-//118
+//118  получить сумму двух массивов...
+
+function arrayPlusArray(arr1, arr2) {
+  let sum = 0;
+  let arr = arr1.concat(arr2);
+arr.forEach(function sumNumber( num ) {
+    sum += num;
+   }
+);
+ return sum;
+}
