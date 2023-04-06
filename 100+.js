@@ -118,3 +118,14 @@ function pillars(numPill, dist, width) {
   if (numPill == 1) return 0;
   else return ((numPill-1) * dist)*100 + ((numPill-2) * width);
 }
+
+//115 Если число имеет целый квадратный корень, возьмите его, иначе возведите число в квадрат.
+
+function squareOrSquareRoot(arr) {
+  for (let i=0; i<arr.length; i++){
+    if(Math.sqrt(arr[i])%1 == 0){
+      arr[i] = Math.sqrt(arr[i]);
+    } else arr[i] = arr[i]**2;
+  }
+  return arr;  
+}
