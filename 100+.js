@@ -254,3 +254,14 @@ function typeValidation(variable, type) {
   if (typeof (variable) === type) return true;
   else return false;
 }
+
+//128 если ваша функция получает 230.00 на вход, она должна вернуть 200.00, без ндс, округленное до 2х знаков
+
+//return price without vat
+function excludingVatPrice(price){
+  let sum;
+  if( price === null) return -1;
+  else sum = price - price/115*15;
+    return sum.toFixed(2)*1;
+}
+
