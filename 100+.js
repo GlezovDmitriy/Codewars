@@ -244,3 +244,7 @@ function bonusTime(salary, bonus) {
 
 //126
 
+function checkForFactor (base, factor) {
+  return base%factor == 0 ? true : false;
+}
+
