@@ -248,3 +248,9 @@ function checkForFactor (base, factor) {
   return base%factor == 0 ? true : false;
 }
 
+//127
+
+function typeValidation(variable, type) {
+  if (typeof (variable) === type) return true;
+  else return false;
+}
