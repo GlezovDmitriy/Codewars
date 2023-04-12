@@ -265,3 +265,11 @@ function excludingVatPrice(price){
     return sum.toFixed(2)*1;
 }
 
+//129
+
+function opposite(number) {
+  return - number;
+}
+
+//130
+
