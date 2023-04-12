@@ -188,3 +188,10 @@ function remainder(n, m){
   if( n >= m) return n%m;
   else if (m > n) return m%n
 }
+
+//122
+
+function twiceAsOld(dad, son) {
+  let years = dad - 2*son;
+  return Math.abs(years);
+}
