@@ -231,3 +231,16 @@ function maps(x){
   
   return name;
 } 
+
+//125
+
+function bonusTime(salary, bonus) {
+  let sum = 0;  
+    if(bonus === true){
+      sum = salary*10;
+    } else sum = salary;
+    return `£${sum}`;
+  }
+
+//126
+
