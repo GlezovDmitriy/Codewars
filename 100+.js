@@ -182,3 +182,9 @@ function rentalCarCost(d) {
    return sum;
  }
 
+//121
+
+function remainder(n, m){
+  if( n >= m) return n%m;
+  else if (m > n) return m%n
+}
