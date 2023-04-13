@@ -276,3 +276,9 @@ function opposite(number) {
 websites.push('codewars');
 
 //131
+
+// mark the MrFreeze object instance as frozen
+Object.freeze(MrFreeze);
+
+//132
+
