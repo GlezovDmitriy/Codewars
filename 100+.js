@@ -282,3 +282,13 @@ Object.freeze(MrFreeze);
 
 //132
 
+function countBy(x, n) {
+  let z = [];
+  for (let i = x; z.length+1<=n; i+=x){
+    z.push(i);
+  }
+  return z;
+}
+
+//133
+
