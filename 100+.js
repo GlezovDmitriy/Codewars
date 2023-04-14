@@ -292,3 +292,11 @@ function countBy(x, n) {
 
 //133
 
+function stringToArray(string){
+
+	return string.split(' ');// code code code
+
+}
+
+//134
+
