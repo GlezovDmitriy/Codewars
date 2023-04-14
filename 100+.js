@@ -300,3 +300,11 @@ function stringToArray(string){
 
 //134
 
+function binToDec(bin){
+  return parseInt(bin, 2);
+   
+  }
+
+  //135
+
+  
