@@ -305,6 +305,13 @@ function binToDec(bin){
    
   }
 
-  //135
+//135
 
-  
+  function between(a, b) {
+    let arr = [a];
+    while ( b-a > 0){
+      arr.push(a+1);
+      a++
+    }
+    return arr;
+  }  
