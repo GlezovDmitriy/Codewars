@@ -328,5 +328,15 @@ function digitize(n) {
   return arr1;
 }
 
-//137
+//137 принимает два аргумента и возвращает все числа, которые делятся на заданный делитель.
 
+function divisibleBy(numbers, divisor){
+  let arr = [];
+  for (let i =0; i<numbers.length; i++){
+    if(numbers[i]%divisor == 0){
+      arr.push(numbers[i]);
+    } else continue;
+  }
+  return arr;
+
+}
