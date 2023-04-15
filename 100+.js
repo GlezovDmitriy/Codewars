@@ -315,3 +315,18 @@ function binToDec(bin){
     }
     return arr;
   }  
+
+//136
+
+function digitize(n) {
+  let str = String(n);
+  let arr = str.split('');
+  let arr1 =arr.reverse();
+    for (let i=0; i<arr.length; i++){
+    arr1[i] = arr1[i]*1;
+  }
+  return arr1;
+}
+
+//137
+
