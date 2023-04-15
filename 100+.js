@@ -340,3 +340,12 @@ function divisibleBy(numbers, divisor){
   return arr;
 
 }
+
+//138
+
+function solution(a, b){
+  let str;
+  if( a.length > b.length){
+    return b+a+b;
+  } else return a+b+a;
+}
