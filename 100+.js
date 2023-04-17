@@ -387,3 +387,16 @@ function nameShuffler(str){
 }
 
 //143
+
+function doubleChar(str) {
+  let str2 = '';
+  for(let i=0; i<str.length; i++){
+    str2+=str[i];
+    str2+=str[i];
+  }
+  return str2;
+}
+
+//144
+
+
