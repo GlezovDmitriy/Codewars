@@ -369,4 +369,13 @@ function numberToString(num) {
   return String(num);
 }
 
-//141
+//141 Создайте функцию, которая возвращает массив целых чисел от n до 1, где n>0. перевернутый
+
+const reverseSeq = n => {
+  let arr = [];
+  for (let i =1;i<=n; i++){
+    arr.push(i);
+  }
+  return arr.reverse();
+}
+
