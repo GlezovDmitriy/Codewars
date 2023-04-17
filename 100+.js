@@ -386,7 +386,7 @@ function nameShuffler(str){
   return arr;
 }
 
-//143
+//143 должны вернуть строку, в которой каждый символ (с учетом регистра) повторяется один раз.
 
 function doubleChar(str) {
   let str2 = '';
@@ -397,6 +397,14 @@ function doubleChar(str) {
   return str2;
 }
 
-//144
+//144 Учитывая массив целых чисел в виде строк и чисел, 
+//    верните сумму значений массива, как если бы все они были числами.
 
+function sumMix(x){
+  let sum=0;
+  for (let i =0; i<x.length; i++){
+    sum += Number(x[i]);
+  }
+  return sum;
+}
 
