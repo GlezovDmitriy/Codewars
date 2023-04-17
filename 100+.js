@@ -362,3 +362,11 @@ function positiveSum(arr) {
   }
   return sum;
 }
+
+//140
+
+function numberToString(num) {
+  return String(num);
+}
+
+//141
