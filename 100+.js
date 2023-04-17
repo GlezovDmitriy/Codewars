@@ -379,3 +379,11 @@ const reverseSeq = n => {
   return arr.reverse();
 }
 
+//142 Напишите функцию, которая возвращает строку, в которой имя заменено на фамилию. перевернуто имя
+
+function nameShuffler(str){
+  let arr = str.split(' ').reverse(). join(' ');
+  return arr;
+}
+
+//143
