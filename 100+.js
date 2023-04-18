@@ -408,3 +408,9 @@ function sumMix(x){
   return sum;
 }
 
+//145 преобразование шестнадцатеричного кода в десятичный
+
+function hexToDec(hexString){
+  return parseInt(hexString, 16); 
+}
+
