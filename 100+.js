@@ -414,3 +414,11 @@ function hexToDec(hexString){
   return parseInt(hexString, 16); 
 }
 
+//146
+
+function derive(c,exp) {
+  return `${c*exp}x^${exp-1}`
+  
+}
+
+//147
