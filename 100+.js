@@ -434,3 +434,15 @@ function mergeArrays(arr1, arr2) {
 }
 
 //148
+
+function correctTail(body, tail) {
+  let end = body.slice(body.length-1);
+  if (end == tail){
+    return true;
+  } else 
+    return false;
+  }
+
+
+//149
+
