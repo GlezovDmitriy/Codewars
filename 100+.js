@@ -456,4 +456,12 @@ function fakeBin(x){
     return str;
   }
 
-  
+//150
+
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    return Math.min(...args);
+  }
+}
+
+
