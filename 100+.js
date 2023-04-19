@@ -421,4 +421,16 @@ function derive(c,exp) {
   
 }
 
-//147
+//147 объединить их в один, отсортированный по возрастанию, убрать дубликаты
+
+function mergeArrays(arr1, arr2) {
+  let arr = arr1.concat(arr2);
+  arr.sort(sortNum);
+  function sortNum(a,b){
+    return a-b;
+  }
+  let arr3 = Array.from(new Set(arr)); // убрать дубликаты, сделать массивом( Array.from)
+  return arr3;
+}
+
+//148
