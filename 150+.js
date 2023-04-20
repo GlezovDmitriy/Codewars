@@ -19,3 +19,15 @@ function capitalizeWord(word) {
     let first = word[0].toUpperCase();
     return first + word.substr(1);
   }
+
+//153
+
+function greet(name){
+    if(name === "Johnny"){
+      return "Hello, my love!";
+    } else 
+    {return "Hello, " + name + "!";
+    }
+  }
+
+//154 
