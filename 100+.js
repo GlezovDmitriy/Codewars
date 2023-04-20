@@ -456,7 +456,7 @@ function fakeBin(x){
     return str;
   }
 
-//150
+//150 Учитывая массив целых чисел, ваше решение должно найти наименьшее целое число.
 
 class SmallestIntegerFinder {
   findSmallestInt(args) {
