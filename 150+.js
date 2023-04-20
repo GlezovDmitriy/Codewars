@@ -12,3 +12,10 @@ function well(x){
     else return  'Fail!';
   
   }
+
+//152 сделать первый символ в строке "слово" в верхнем регистре
+
+function capitalizeWord(word) {
+    let first = word[0].toUpperCase();
+    return first + word.substr(1);
+  }
