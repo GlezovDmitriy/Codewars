@@ -63,3 +63,13 @@ function reverseList(list) {
   }
 
 //157  
+
+function setAlarm(em, vac){
+    if (em == true && vac == true) return false;
+    else if ( em == true && vac !== true) return true;
+    else return false;
+  
+  }
+
+//158
+
