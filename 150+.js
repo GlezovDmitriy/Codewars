@@ -98,3 +98,17 @@ function defineSuit(card) {
   else if (card[1] == '♥'|| card[2] == '♥') return 'hearts';
   else if (card[1] == '♠'|| card[2] == '♠') return 'spades';
 }
+
+//161
+
+function toFreud(string) {
+  let arr = string.split(' ');
+  let str = '';
+    if ( string == '') return '';
+    for(let i =0; i<arr.length; i++){
+      str+= 'sex ';
+    }
+  return str.slice(0, str.length-1);
+  }
+
+  
