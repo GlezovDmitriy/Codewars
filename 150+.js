@@ -86,3 +86,9 @@ function howManyDalmatians(number){
 
 //159
 
+function plural(n) {
+  return (n == 1) ? false : true;
+}
+
+//160
+
