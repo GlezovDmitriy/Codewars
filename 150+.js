@@ -90,5 +90,11 @@ function plural(n) {
   return (n == 1) ? false : true;
 }
 
-//160
+//160 масть карты вернуть
 
+function defineSuit(card) {
+  if(card[1] == '♣' || card[2] == '♣') return 'clubs';
+  else if (card[1] == '♦'|| card[2] == '♦') return 'diamonds';
+  else if (card[1] == '♥'|| card[2] == '♥') return 'hearts';
+  else if (card[1] == '♠'|| card[2] == '♠') return 'spades';
+}
