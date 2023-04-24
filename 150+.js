@@ -111,4 +111,8 @@ function toFreud(string) {
   return str.slice(0, str.length-1);
   }
 
-  
+//162 Вывести строку БЕЗ цифр.
+
+function stringClean(s){
+  return s.replace(/[0-9]/g,"");
+}
