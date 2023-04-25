@@ -126,3 +126,22 @@ function shortenToDate(longDate) {
 
 //164
 
+function magNumber(info){
+  let count;
+  if (info[0] == 'PT92') {
+    count = info[1] * 3 / 17;
+    return Math.ceil(count);
+} else if (info[0] == 'M4A1') {
+    count = info[1] * 3 / 30;
+    return Math.ceil(count);
+}  else if (info[0] == 'M16A2') {
+    count = info[1] * 3 / 30;
+    return Math.ceil(count); 
+}  else if (info[0] == 'PSG1') {
+    count = info[1] * 3 / 5;
+    return Math.ceil(count);  
+}
+}
+
+//165
+
