@@ -116,3 +116,13 @@ function toFreud(string) {
 function stringClean(s){
   return s.replace(/[0-9]/g,"");
 }
+
+//163
+
+function shortenToDate(longDate) {
+  let arr = longDate.split(',');
+  return arr[0];
+}
+
+//164
+
