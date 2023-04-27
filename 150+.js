@@ -150,4 +150,12 @@ function usdcny(usd) {
   
 }
 
-//166
+//166 берет массив слов, объединяет их в предложение и возвращает предложение, без пробела в конце
+
+function smash (words) {
+  let str = '';
+  for(let i = 0; i<words.length; i++){
+    str += words[i]+' ';
+  }
+   return str.slice(0, str.length-1);
+};
