@@ -159,3 +159,16 @@ function smash (words) {
   }
    return str.slice(0, str.length-1);
 };
+
+//167
+
+function take(arr, n) {
+  let arr1 = [];
+  if (n > arr.length) {
+    n = arr.length;
+  }
+  for (let i =0; i<n; i++){
+    arr1.push(arr[i]);
+  }
+  return arr1;
+}
