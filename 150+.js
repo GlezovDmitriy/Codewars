@@ -183,3 +183,16 @@ function hello(name) {
   } 
   
 }
+
+//169 Удалите все восклицательные знаки из предложения, но убедитесь, что восклицательный знак стоит в конце строки.
+
+function remove (string) {
+  let str = '';
+  for(let i = 0; i<string.length; i++){
+    if (string[i] !== '!'){
+      str+= string[i];
+    } else continue;
+  }
+  return str +'!';  
+}
+
