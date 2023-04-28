@@ -196,3 +196,15 @@ function remove (string) {
   return str +'!';  
 }
 
+//170 Найдите сумму всех кратных n ниже m
+
+function sumMul(n,m){
+  if (n <= 0 || m<= 0) return "INVALID";
+  let sum = 0;
+  let i = n;
+  while (i< m){
+    sum+=i;
+    i += n;
+  }
+ return sum;
+}
