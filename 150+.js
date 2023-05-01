@@ -218,4 +218,16 @@ function peopleWithAgeDrink(old) {
   else return "drink whisky";
 };
 
+//172
+
+function uefaEuro2016(t, s){
+  if (s[0] > s[1]){
+    return `At match ${t[0]} - ${t[1]}, ${t[0]} won!`;
+  } else if (s[0] < s[1]){
+    return `At match ${t[0]} - ${t[1]}, ${t[1]} won!`;
+  } else if (s[0] == s[1]){
+    return `At match ${t[0]} - ${t[1]}, teams played draw.`;
+  } 
+}
+
 
