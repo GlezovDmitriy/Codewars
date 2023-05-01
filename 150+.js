@@ -230,4 +230,11 @@ function uefaEuro2016(t, s){
   } 
 }
 
+//173
 
+function spEng(s){
+  let str = s.toLowerCase();
+  return str.includes("english");
+ }
+
+//174 
