@@ -238,3 +238,10 @@ function spEng(s){
  }
 
 //174 
+
+var TempleStrings = function(obj, feature) {
+  return `${obj} are ${feature}`;
+}
+
+//175
+
