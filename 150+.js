@@ -248,3 +248,15 @@ var TempleStrings = function(obj, feature) {
 const solve = (x, y) => x / y;
 
 //176
+
+function getDrinkByProfession(param){
+  let par = param.toLowerCase();
+  if (par == 'programmer') return "Hipster Craft Beer";
+  else if (par == 'jabroni') return "Patron Tequila";
+  else if (par == 'school counselor') return "Anything with Alcohol";
+  else if (par == 'bike gang member') return "Moonshine";
+  else if (par == 'politician') return "Your tax dollars";
+  else if (par == 'rapper') return "Cristal";
+  else return "Beer";
+}
+
