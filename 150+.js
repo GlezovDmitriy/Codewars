@@ -271,3 +271,13 @@ function odds(values){
   } 
    return oddArr;
 }
+
+//178
+
+function pointsPer48(ppg, mpg) {
+  if( ppg == 0 && mpg == 0) return 0;
+  else return +(48*ppg/mpg).toFixed(1);
+}
+
+//179
+
