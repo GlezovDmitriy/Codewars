@@ -260,3 +260,14 @@ function getDrinkByProfession(param){
   else return "Beer";
 }
 
+//177 вывести нечетные
+
+function odds(values){
+  let oddArr =[];
+  for (let i = 0;i <values.length; i++){
+    if(values[i]%2 !== 0)
+      {oddArr.push(values[i]);
+       }else continue;
+  } 
+   return oddArr;
+}
