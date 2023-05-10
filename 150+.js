@@ -294,4 +294,19 @@ function sakuraFall(v) {
   return 0;
 }
 
-//180
+//181  возвращает значение true, если сумма квадратов каждого элемента массива 'a' 
+       //строго больше суммы кубов каждого элемента массива 'b'
+
+function arrayMadness(a, b) {
+  let sumA = 0;
+  let sumB = 0;
+  for (let i = 0; i<a.length; i++){
+    sumA += a[i]**2;
+  }
+  for (let j = 0; j<b.length; j++){
+    sumB += b[j]**3;
+  }
+  if (sumA > sumB) return true;
+  else return false;
+}
+
