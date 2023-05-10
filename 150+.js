@@ -285,3 +285,13 @@ function formatMoney(amount){
   return '$'+`${amount.toFixed(2)}`;
 }
 
+//180
+
+function sakuraFall(v) {
+  if (v > 0) {
+  return 5*80/v;
+  } else 
+  return 0;
+}
+
+//180
