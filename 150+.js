@@ -281,3 +281,7 @@ function pointsPer48(ppg, mpg) {
 
 //179
 
+function formatMoney(amount){
+  return '$'+`${amount.toFixed(2)}`;
+}
+
