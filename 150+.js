@@ -310,3 +310,29 @@ function arrayMadness(a, b) {
   else return false;
 }
 
+//182  задача — поменять буквы с диакритическими знаками:
+
+// ą -> a,
+// ć -> c,
+// ę -> e,
+// ł -> l,
+// ń -> n,
+// ó -> o,
+// ś -> s,
+// ź -> z,
+// ż -> z
+
+function correctPolishLetters (string) {
+  let str = (string.replace( /ą/g, "a" ));
+  let str2 = (str.replace( /ć/g, "c" ));
+  let str3 = (str2.replace( /ę/g, "e" ));
+  let str4 = (str3.replace( /ł/g, "l" ));
+  let str5 = (str4.replace( /ń/g, "n" ));
+  let str6 = (str5.replace( /ó/g, "o" ));
+  let str7 = (str6.replace( /ś/g, "s" ));
+  let str8 = (str7.replace( /ź/g, "z" ));
+  let str9 = (str8.replace( /ż/g, "z" ));
+  
+  return str9;
+}
+
