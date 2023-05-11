@@ -336,3 +336,18 @@ function correctPolishLetters (string) {
   return str9;
 }
 
+//183 найти max b min и разницу, вывести массив
+
+function differenceInAges(ages){
+  let arr = [];
+  let min = Math.min(...ages);
+  let max = Math.max(...ages);
+  let dif = max - min;
+  arr.push(min);
+  arr.push(max);
+  arr.push(dif);
+  return arr;
+
+}
+
+
