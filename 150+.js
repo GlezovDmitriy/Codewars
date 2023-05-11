@@ -378,7 +378,33 @@ function tripleTrouble(one, two, three){
    return num;
  }
 
+ // вариант 2
+ function noBoringZeros(n) {
+  while (n % 10 === 0 && n !== 0) {
+    n = n / 10
+  }
+  return n
+}
+
  //186
+
+ function calculateTip(amount, rating) {
+  let count;
+    let ratin = rating.toLowerCase();
+    if(ratin == 'terrible') {
+      count = 0;
+    } else if (ratin == 'poor') {
+      count = amount*0.05;
+    } else if (ratin == 'good') {
+      count = amount*0.1;
+    } else if (ratin == 'great') {
+      count = amount*0.15;
+    } else if (ratin == 'excellent') {
+      count = amount*0.2;
+    } else return "Rating not recognised";
+      
+    return Math.ceil(count);
+  }
 
 
 
