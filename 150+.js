@@ -350,4 +350,19 @@ function differenceInAges(ages){
 
 }
 
+//184 возвращать строку, объединяющую все буквы трех введенных строк в группы
+
+function tripleTrouble(one, two, three){
+  let str = '';
+  for (let i =0; i<one.length; i++){
+    str += one[i];
+    str += two[i];
+    str += three[i];  
+  }
+  return str;
+ }
+
+//185
+
+
 
