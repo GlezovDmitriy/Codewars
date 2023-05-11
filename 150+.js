@@ -363,7 +363,7 @@ function tripleTrouble(one, two, three){
  }
  
  
- //185 убрать нули с конца
+//185 убрать нули с конца
 
  function noBoringZeros(n) {
   let countZero = 0;
@@ -378,7 +378,7 @@ function tripleTrouble(one, two, three){
    return num;
  }
 
- // вариант 2
+// вариант 2
  function noBoringZeros(n) {
   while (n % 10 === 0 && n !== 0) {
     n = n / 10
@@ -386,7 +386,7 @@ function tripleTrouble(one, two, three){
   return n
 }
 
- //186
+//186
 
  function calculateTip(amount, rating) {
   let count;
@@ -405,6 +405,16 @@ function tripleTrouble(one, two, three){
       
     return Math.ceil(count);
   }
+
+//187
+
+  var quote = function(fighter) {
+    let name = fighter.toLowerCase();
+    if (name == 'george saint pierre')
+      return "I am not impressed by your performance.";
+    else if (name == 'conor mcgregor')
+      return "I'd like to take this chance to apologize.. To absolutely NOBODY!";
+  };  
 
 
 
