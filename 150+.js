@@ -361,8 +361,24 @@ function tripleTrouble(one, two, three){
   }
   return str;
  }
+ 
+ 
+ //185 убрать нули с конца
 
-//185
+ function noBoringZeros(n) {
+  let countZero = 0;
+   let num;
+   let str = String(n);
+   for(let i = str.length-1; i>=0; i--){
+     if( str[i] == 0) 
+       countZero += 1;  // находим кол-во нулей в конце
+     else break;
+   }
+   num = n/ 10**countZero;
+   return num;
+ }
+
+ //186
 
 
 
