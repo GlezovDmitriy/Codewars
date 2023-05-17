@@ -476,3 +476,11 @@ function quadratic(x1, x2){
 
 //195
 
+class Kata {
+  static getVolumeOfCuboid(l, w, h) {
+   return l*w*h;
+  }
+}
+
+//196
+
