@@ -484,3 +484,19 @@ class Kata {
 
 //196
 
+function array(string) {
+  if (string.length == 0)
+    return null;
+  let arr = string.split(',');
+  let arr1 = [];
+  for (let i = 1; i<arr.length-1; i++){
+      arr1.push(arr[i]);
+  }
+  let str2 = arr1.join(' ');
+  if (str2.length == 0) return null;
+  else
+    return str2;
+}
+
+//197
+
