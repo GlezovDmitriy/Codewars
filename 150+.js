@@ -463,3 +463,10 @@ function calculator(a,b,sign){
 }
 
 //193
+
+function integrate(c, exp) {
+  return `${c/(exp+1)}x^${exp+1}`
+}
+
+//194
+
