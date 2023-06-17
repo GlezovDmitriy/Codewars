@@ -500,3 +500,9 @@ function array(string) {
 
 //197
 
+function hero(bul, drag){
+  if (bul/drag >= 2){
+    return true;
+  } else  return false;
+  }
+  
