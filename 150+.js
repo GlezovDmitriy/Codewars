@@ -505,4 +505,11 @@ function hero(bul, drag){
     return true;
   } else  return false;
   }
-  
+
+//198
+
+// add the value "codewars" to the websites array 1,000 times
+let websites = [];
+while (websites.length <= 999){
+  websites.push('codewars');
+} 
