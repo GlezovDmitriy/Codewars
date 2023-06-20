@@ -20,4 +20,10 @@ function getSize(width, height, depth){
   }
 
 //203
-  
+ 
+function logs(x , a, b){
+    return Math.log(a) / Math.log(x) + Math.log(b) / Math.log(x) ;
+   }
+
+//204
+   
