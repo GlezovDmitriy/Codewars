@@ -26,4 +26,12 @@ function logs(x , a, b){
    }
 
 //204
-   
+
+function finalGrade (ex, pr) {
+  if (ex > 90 || pr > 10) return 100;
+  else if ( ex > 75 && pr >= 5) return 90;
+  else if ( ex > 50 && pr >= 2)return 75;
+  else return 0;
+  }
+//205
+  
