@@ -33,5 +33,14 @@ function finalGrade (ex, pr) {
   else if ( ex > 50 && pr >= 2)return 75;
   else return 0;
   }
-//205
-  
+
+  //205
+
+  function grader(s) {
+    if (s > 1 || s < 0.6) return 'F';
+    else if ( s >= 0.9) return 'A';
+    else if ( s >= 0.8) return "B";
+    else if ( s >= 0.7) return "C";
+    else if ( s >= 0.6) return "D";
+    
+  }
