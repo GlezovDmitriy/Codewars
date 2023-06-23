@@ -56,3 +56,13 @@ function finalGrade (ex, pr) {
     let medium = sum / array.length;
     return medium;
   }
+
+  //207
+
+  function iceBrickVolume(radius, bottleLength, rimLength) {
+    let h = bottleLength - rimLength;
+    let s = radius*radius+radius*radius;
+    return s*h;
+  }
+
+  
