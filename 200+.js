@@ -57,12 +57,17 @@ function finalGrade (ex, pr) {
     return medium;
   }
 
-  //207
+  //207 посчитать объем кирпича в бутылке
 
   function iceBrickVolume(radius, bottleLength, rimLength) {
     let h = bottleLength - rimLength;
     let s = radius*radius+radius*radius;
     return s*h;
   }
+//207
 
-  
+function remove (string) { 
+  return string.replace(/!+$/, '');
+}
+
+
