@@ -44,3 +44,15 @@ function finalGrade (ex, pr) {
     else if ( s >= 0.6) return "D";
     
   }
+
+  //206 Напишите функцию, которая вычисляет среднее значение чисел в заданном списке.
+
+  function findAverage(array) {
+    if (array.length == 0) return 0;
+    let sum = 0;
+    for (let i=0; i<array.length; i++){
+      sum+=array[i];
+    }
+    let medium = sum / array.length;
+    return medium;
+  }
