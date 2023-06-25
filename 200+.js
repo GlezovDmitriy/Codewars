@@ -110,3 +110,16 @@ function pipeFix(numbers){
     return arr;
 }
 
+//213 вернуть название ближайшего к вызываемому этажу лифта ( "left"/ "right").
+       //в случае, когда оба лифта одинаково удалены от вызываемого этажа, выбирайте лифт справа.
+
+function elevator(left, right, call){
+  if ((Math.abs(left-call)) > (Math.abs(right-call))){
+    return 'right'
+  } else if ((Math.abs(left-call)) < (Math.abs(right-call))){
+    return 'left'
+  } else if ((Math.abs(left-call)) == (Math.abs(right-call))){
+    return 'right'
+  }
+  }
+
