@@ -95,3 +95,18 @@ function enough(cap, on, wait) {
     return wait-(cap-on)};
 }
 
+//212 Учитывая список a numbers, верните фиксированный список, 
+//чтобы значения увеличивались на 1 для каждого индекса от минимального значения 
+//до максимального значения (включая оба).
+
+function pipeFix(numbers){
+  let min = Math.min(...numbers);
+  let max = Math.max(...numbers);
+  let arr = [];
+  arr.push(min);
+  for (let i = 0; arr[i] < max; i++){
+    arr.push(arr[i]+1);
+  }
+    return arr;
+}
+
