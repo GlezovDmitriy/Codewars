@@ -78,3 +78,12 @@ let name = a + b
 
 //210
 
+function sixToast(num) {
+  if (num < 6) {
+    return 6-num;
+  } else if (num > 6){
+    return num - 6;
+  } else return 0;
+}
+
+//211
