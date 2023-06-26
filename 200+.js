@@ -150,3 +150,12 @@ function multiply(number){
   else 
   return number * (5**str.length);
 }
+
+//217
+
+function add(a, b){
+	if (a*1 === b*1) return true;
+  else return false;
+}
+
+//218
