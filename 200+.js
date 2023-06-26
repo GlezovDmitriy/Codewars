@@ -159,3 +159,9 @@ function add(a, b){
 }
 
 //218
+
+function combineNames (fName, lName){
+  return fName +' '+ lName;
+}
+
+//219
