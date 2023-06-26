@@ -141,3 +141,12 @@ function contamination(text, char){
   }
   return str;
 }
+
+//216
+
+function multiply(number){
+  let str = String(Math.abs(number));
+  if (number == 0) return 0;
+  else 
+  return number * (5**str.length);
+}
