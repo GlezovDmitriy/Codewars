@@ -175,3 +175,9 @@ function sc(floor){
   }
 }
 
+//220  Перевернуть строку (слова поменять местами -  а не буквы)
+
+function reverse(string){
+  let arr = string.trim().split(' ').reverse().join(' ');
+  return arr;
+}
