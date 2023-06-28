@@ -208,3 +208,15 @@ function twoHighest(arr) {
   }
  
 }
+
+//223
+
+function whoIsPaying(name){
+  if (name.length == 0) return [''];
+  else if (name.length == 1 ) return [name];
+  else if (name.length == 2 ) return [name];
+  else return [name, name.slice(0,2)];
+}
+
+//224
+
