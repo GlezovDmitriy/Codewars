@@ -181,3 +181,16 @@ function reverse(string){
   let arr = string.trim().split(' ').reverse().join(' ');
   return arr;
 }
+
+//221 массив. дано: мин, макс и шаг.
+
+function generateRange(min, max, step){
+  let arr=[];
+  arr.push(min);
+  for (let i = 0; arr[i] < max; i++){
+    if( (arr[i]+step) <= max){
+      arr.push(arr[i]+step);
+    }else break;
+  }
+  return arr;
+}
