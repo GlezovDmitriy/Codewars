@@ -194,3 +194,17 @@ function generateRange(min, max, step){
   }
   return arr;
 }
+
+//222 вернуть два различных самых высоких значения в списке. Если уникальных значений меньше двух, верните как можно ///больше из них.
+
+function twoHighest(arr) {
+  if (arr.length == 0) return [];
+  else if (arr.length == 1) return [arr[0]];
+  arr.sort((a, b) => b - a);
+  for( let i= 0; i < arr.length; i++){
+    if( arr[i] !== arr[i+1])  {
+      return [arr[i], arr[i+1]];
+  } else continue;
+  }
+ 
+}
