@@ -220,3 +220,11 @@ function whoIsPaying(name){
 
 //224
 
+function sumSquares(array) {
+  let res = array.reduce(function(sum, elem) {
+	return sum + elem**2;
+}, 0);
+  return res;
+}
+
+//225
