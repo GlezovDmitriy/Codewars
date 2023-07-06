@@ -228,3 +228,9 @@ function sumSquares(array) {
 }
 
 //225
+
+function updateLight(current) {
+  return (current == 'green'? 'yellow': current == 'yellow'? 'red': 'green');
+}
+
+//226
