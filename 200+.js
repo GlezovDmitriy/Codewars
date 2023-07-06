@@ -259,3 +259,9 @@ var findAverage = function (nums) {
   }
   return sum / nums.length;
 }
+
+//229 округлить до 2-го знака
+
+function twoDecimalPlaces(n) {
+  return n.toFixed(2)*1;
+  }
