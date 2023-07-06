@@ -239,4 +239,13 @@ function cockroachSpeed(s) {
   return Math.floor( s * 27.777778);
 }
 
-//227
+//227 удалить из массива определенные слова
+
+function gooseFilter (birds) {
+  let geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
+  let result = birds.filter(word => word !=="African" && word !=="Roman Tufted" 
+                            && word !=="Toulouse" && word !=="Pilgrim"
+                           && word !=="Steinbacher");
+  return result;
+
+};
