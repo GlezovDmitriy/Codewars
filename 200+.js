@@ -339,3 +339,19 @@ let min = Math.min(...arr2);
 let st = String(max) +' '+ String(min);
 return st;
 };
+
+//234-2 через сортировку
+
+function highAndLow(numbers){
+  var arr = numbers.split(' ').sort(function(a, b) { return a - b });
+  return arr[arr.length -1] + ' ' + arr[0];
+}
+
+//235
+
+var isSquare = function(n){
+  if(n<0) return false;
+  else if (Math.sqrt(n)%1 == 0) return true;
+  else return false;
+  
+}
