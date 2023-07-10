@@ -285,3 +285,20 @@ let name2 = 'Ben';
 let greet_ben = function() {
   return "Hello, " + name2 + '!';
 };
+
+//232
+
+function disemvowel(str) {
+  let arr = str.split('');
+  let arr2 =[];
+  for( let i = 0; i< arr.length; i++){
+    if (arr[i]== 'a' || arr[i]== 'e' ||
+        arr[i]== 'i' || arr[i]== 'o' || 
+        arr[i]== 'u' || arr[i]== 'A' || 
+        arr[i]== 'E' || arr[i]== 'I' || 
+        arr[i]== 'O' || arr[i]== 'U') continue;
+    else arr2.push(arr[i]);
+  }
+  
+  return arr2.join('');
+}
