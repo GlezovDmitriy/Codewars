@@ -387,3 +387,12 @@ function getMiddle(s){
  
  return str;
 }
+
+//238 Убрать из массива строки
+
+function filter_list(l) {
+  let arr = l.filter(function(elem){
+    return typeof(elem) !== 'string';
+  })  
+   return arr;
+  }
