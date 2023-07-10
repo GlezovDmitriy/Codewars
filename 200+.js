@@ -286,7 +286,7 @@ let greet_ben = function() {
   return "Hello, " + name2 + '!';
 };
 
-//232
+//232  Вернуть строку без гласгных
 
 function disemvowel(str) {
   let arr = str.split('');
@@ -300,5 +300,19 @@ function disemvowel(str) {
     else arr2.push(arr[i]);
   }
   
+  return arr2.join('');
+}
+
+//232 2
+
+function disemvowel(str) {
+  let arr = str.split('');
+  let arr2 = arr.filter(function(elem){
+    return elem !== 'a' && elem !== 'e' &&
+        elem !== 'i' && elem !== 'o' && 
+        elem !== 'u' && elem !== 'A' && 
+        elem !== 'E' && elem !== 'I' && 
+        elem !== 'O' && elem !== 'U'
+    });
   return arr2.join('');
 }
