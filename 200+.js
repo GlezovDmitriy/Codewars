@@ -326,3 +326,16 @@ function squareDigits(num){
   });
   return +arr2.join('');
 }
+
+//234 В строке чисел, найти макс и мин, и вывести строкой.
+
+function highAndLow(numbers){
+  let arr = numbers.split(' ');
+  let arr2 = arr.map(function(el){
+    return 1*el;
+  });
+let max = Math.max(...arr2);
+let min = Math.min(...arr2);
+let st = String(max) +' '+ String(min);
+return st;
+};
