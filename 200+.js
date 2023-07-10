@@ -366,3 +366,24 @@ function descendingOrder(n){
   return + String(n).split('').sort(function(a,b){return (b-a)}).join('');
 }
 
+//237  Вывести середину строки, 1 или 2 символа.
+      //Kata.getMiddle("test") should return "es"
+
+      //Kata.getMiddle("testing") should return "t"
+
+
+function getMiddle(s){
+  let arr = s.split('');
+ let index = arr.length/2;
+ let arr2 = [];
+ let str;
+ if( arr.length%2 == 0) {
+     arr2 = arr.slice(index-1, index+1);
+     str = arr2.join('');
+ } else {
+     arr2 = arr[index-0.5];
+     str = arr2;
+ };
+ 
+ return str;
+}
