@@ -355,3 +355,14 @@ var isSquare = function(n){
   else return false;
   
 }
+
+//236 создать функцию, которая может принимать любое неотрицательное целое число
+      //в качестве аргумента и возвращать его с цифрами в порядке убывания
+
+function descendingOrder(n){
+  //let arr = String(n).split('').sort(function(a,b){return (b-a)});   
+  //let str = arr.join('');
+  //return +str;
+  return + String(n).split('').sort(function(a,b){return (b-a)}).join('');
+}
+
