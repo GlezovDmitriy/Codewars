@@ -303,7 +303,7 @@ function disemvowel(str) {
   return arr2.join('');
 }
 
-//232 2
+//232 2 Вернуть строку без гласгных
 
 function disemvowel(str) {
   let arr = str.split('');
@@ -315,4 +315,14 @@ function disemvowel(str) {
         elem !== 'O' && elem !== 'U'
     });
   return arr2.join('');
+}
+
+//233
+
+function squareDigits(num){
+  let arr = String(num).split('');
+  let arr2 = arr.map(function(elem){
+    return elem**2;
+  });
+  return +arr2.join('');
 }
