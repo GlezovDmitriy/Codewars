@@ -410,3 +410,21 @@ function getCount(str) {
   }
       return count;
 }
+
+//240 содержит ли строка одинаковое количество «x» и «o».
+
+function XO(str) {
+  str.toLowerCase();
+let arr = str.split('');
+let countX = 0;
+let countO = 0;
+for (let i =0; i<arr.length; i++){
+  if(arr[i] == 'x' || arr[i] == 'X')
+    countX++;
+  else if (arr[i] == 'o' || arr[i] == 'O')
+    countO++;
+  else continue;
+} 
+return countX == countO;
+}
+
