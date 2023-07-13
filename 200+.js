@@ -428,3 +428,11 @@ for (let i =0; i<arr.length; i++){
 return countX == countO;
 }
 
+//241 Найти сумму двух наименьших чисел в массиве.
+
+function sumTwoSmallestNumbers(num) {  
+  let arr = num.sort(function(a,b){ return(b-a)});
+  let first = arr.pop();
+  let second = arr.pop();
+  return first + second;
+}
