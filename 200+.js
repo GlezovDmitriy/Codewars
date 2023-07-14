@@ -436,3 +436,10 @@ function sumTwoSmallestNumbers(num) {
   let second = arr.pop();
   return first + second;
 }
+
+//242 Метод endsWith()определяет, заканчивается ли строка символами указанной строки,
+      // возвратом   true или false соответствующим образом.
+
+function solution(str, end){
+  return str.endsWith(end)
+}
