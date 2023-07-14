@@ -456,3 +456,14 @@ function maskify(cc) {
   return arr.reverse().join('');
 
 }
+
+//244
+
+function friend(friends){
+  let arr = friends.filter(function(elem){
+    return elem.length == 4;
+  });
+   return arr;     
+}
+
+//245
