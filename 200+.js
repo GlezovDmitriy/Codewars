@@ -443,3 +443,16 @@ function sumTwoSmallestNumbers(num) {
 function solution(str, end){
   return str.endsWith(end)
 }
+
+//243
+
+function maskify(cc) {
+  if(cc.length < 5) return cc;
+  let arr = cc.split('');
+  arr.reverse();
+  for (let i = 4; i<arr.length; i++){
+    arr[i] = '#';
+  }
+  return arr.reverse().join('');
+
+}
