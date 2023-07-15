@@ -466,4 +466,12 @@ function friend(friends){
    return arr;     
 }
 
-//245
+//245  Возвращает новую отсортированную строку, максимально длинную, содержащую различные буквы 
+//    (каждая из которых взята только один раз) из s1 или s2.
+
+function longest(s1, s2) {
+  let arr1 = s1.split('');
+  let arr2 = s2.split('');
+  let arr = arr1.concat(arr2);
+ return [...new Set(arr)].sort().join('');
+}
