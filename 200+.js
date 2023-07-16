@@ -482,4 +482,15 @@ const binaryArrayToNumber = arr => {
   return parseInt(arr.join(''), 2);
 };
 
-//247
+//247 Перевернуть слова в строке
+
+function reverseWords(str) {
+   str = str.split(" ");
+   let arr = [];
+   for (let i = 0; i < str.length; i++){
+      arr.push (str[i].split("").reverse().join(""));  
+  }  
+  
+  return arr.join(" ");
+}
+
