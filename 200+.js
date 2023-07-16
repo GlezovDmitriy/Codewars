@@ -475,3 +475,11 @@ function longest(s1, s2) {
   let arr = arr1.concat(arr2);
  return [...new Set(arr)].sort().join('');
 }
+
+//246 Перевод из двоичной системы в цулое число
+
+const binaryArrayToNumber = arr => {
+  return parseInt(arr.join(''), 2);
+};
+
+//247
