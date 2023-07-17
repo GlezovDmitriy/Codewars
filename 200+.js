@@ -500,3 +500,19 @@ function arithmetic(a, b, operator){
   return operator == 'add'? a+b: operator == 'subtract'? a-b: operator == 'multiply'? a*b : a/b;
 }
 
+//249   input -- 2,6,2 --> 12 (2 + 4 + 6)
+
+const sequenceSum = (begin, end, step) => {
+  if( begin > end) return 0;
+  let arr = [];
+  let num = begin;
+  while (num <= end){
+    arr.push(num);
+    num+=step;
+  }
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    sum += arr[i];
+    }
+  return sum;
+};
