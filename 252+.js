@@ -14,3 +14,18 @@ function oddOrEven(array) {
   if (sum%2 == 0) return "even";
   else return 'odd';
 }
+
+//254
+
+function divisors(integer) {
+  let arr = [];
+  for (let i = 2; i< integer; i++){
+    if( integer%i == 0){
+      arr.push(i);
+    } else continue;
+  }
+  if (arr.length == 0){
+    return `${integer} is prime`;
+  } else return arr;
+  
+};
