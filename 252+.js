@@ -88,3 +88,17 @@ function removeUrlAnchor(url){
   }
   return str;
 }
+
+//260
+
+var capitals = function (word) {
+	let arr =[];
+  for (let i=0; i<word.length; i++){
+    if( word[i].toUpperCase() === word[i]){
+      arr.push(i);
+    } else continue;
+  }
+  return arr;
+};
+
+//
