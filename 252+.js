@@ -67,3 +67,12 @@ var number = function(busStops){
   return count;
 }
 
+// const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0); 
+
+//258 разбить плитку шоколада заданного размера n x m на маленькие квадраты. Каждый квадрат имеет размер 1x1 
+
+function breakChocolate(n,m) {
+  if( n <= 0 || m <=0 ) return 0;
+  let count = n*m-1;
+  return count;
+}
