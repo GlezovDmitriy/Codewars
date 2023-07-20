@@ -76,3 +76,15 @@ function breakChocolate(n,m) {
   let count = n*m-1;
   return count;
 }
+
+//259
+
+function removeUrlAnchor(url){
+  let str ='';
+  for (let i =0;i<url.length; i++){
+    if (url[i] !== '#'){
+      str+= url[i];
+    }else break;
+  }
+  return str;
+}
