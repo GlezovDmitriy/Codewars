@@ -148,8 +148,9 @@ let t2 = new moment(expirationDate);
   } else return false;
 }
 
-//let t1 = new Date(currentDate);
-  //let t2 = new Date(expirationDate);
-  //if( enteredCode == correctCode && t1.getTime() <= t2.getTime()){
-   // return true;
-  //} else return false;
+//265
+
+function animal(obj){
+  return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
+}
+
