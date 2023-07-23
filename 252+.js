@@ -137,3 +137,19 @@ function stray(num) {
   
 }
 
+//264 CРАВНЕНИЕ ДАТ
+
+function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
+let moment = require('moment');
+let t1 = new moment(currentDate);
+let t2 = new moment(expirationDate);
+  if( enteredCode === correctCode && t1 <= t2){
+    return true;
+  } else return false;
+}
+
+//let t1 = new Date(currentDate);
+  //let t2 = new Date(expirationDate);
+  //if( enteredCode == correctCode && t1.getTime() <= t2.getTime()){
+   // return true;
+  //} else return false;
