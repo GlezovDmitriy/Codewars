@@ -126,3 +126,14 @@ function smallEnough(a, limit){
   }; 
   return true;
 }
+
+//263  возвращает это единственное другое число.
+
+function stray(num) {
+  num.sort();
+  if (num[0] !== num[1] && num[0] !== num[2]){
+    return num[0];
+  } else return num[num.length-1];
+  
+}
+
