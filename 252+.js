@@ -101,7 +101,7 @@ var capitals = function (word) {
   return arr;
 };
 
-//261
+//261 возвращает сумму абсолютного значения каждой из десятичных цифр числа : 99 --> 18; 
 
 function sumDigits(number) {
   let arr = [];
@@ -114,4 +114,15 @@ function sumDigits(number) {
   })
   
   return sum;
+}
+
+//262
+
+function smallEnough(a, limit){
+  for (let i =0; i< a.length; i++){
+    if (a[i] > limit) {
+      return false
+    };  
+  }; 
+  return true;
 }
