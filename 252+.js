@@ -101,4 +101,17 @@ var capitals = function (word) {
   return arr;
 };
 
-//
+//261
+
+function sumDigits(number) {
+  let arr = [];
+   let str = Math.abs(number).toString();
+    for (let i=0; i<str.length; i++){
+    arr.push(str[i]*1);
+  }
+  let sum = arr.reduce(function(acc, elem){
+    return acc + elem;
+  })
+  
+  return sum;
+}
