@@ -154,3 +154,13 @@ function animal(obj){
   return `This ${obj.color} ${obj.name} has ${obj.legs} legs.`;
 }
 
+//266
+
+function isValidWalk(walk) {
+  let n = walk.filter(item => item === 'n').length;
+  let s = walk.filter(item => item === 's').length;
+  let w = walk.filter(item => item === 'w').length;
+  let e = walk.filter(item => item === 'e').length;
+  if ( walk.length == 10 && n == s && w == e) return true;
+  else return false;
+}
