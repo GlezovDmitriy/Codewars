@@ -164,3 +164,12 @@ function isValidWalk(walk) {
   if ( walk.length == 10 && n == s && w == e) return true;
   else return false;
 }
+
+//267  Есть массив с некоторыми числами. Все числа равны, кроме одного. Попробуйте найти!
+
+function findUniq(arr) {
+  arr.sort();
+   if(arr[0] !== arr[1]) return arr[0];
+   else return arr[arr.length-1];
+ }
+ 
