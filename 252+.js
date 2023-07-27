@@ -210,3 +210,21 @@ function countSmileys(arr) {
   }
   return sum;
 }
+
+//271
+
+function bouncingBall(h,  bounce,  window) {
+  if( h < 0 || bounce <= 0 || bounce >= 1 || window >= h){
+    return -1;
+  }
+  let x = h*bounce;
+  let count = 1;
+  if (x <= window){
+    return count;
+  }
+  while (x >= window){
+    x*= bounce;
+    count+= 2;
+  } return count;
+  
+}
