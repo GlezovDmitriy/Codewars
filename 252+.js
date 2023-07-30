@@ -242,3 +242,17 @@ function solution(string) {
     return str;
 }
 
+//273  секунды) в качестве входных данных и возвращает время в удобочитаемом формате ( HH:MM:SS)
+
+function humanReadable (seconds) {
+  let HH = Math.floor(seconds / 60 / 60);
+  let MM = Math.floor(seconds / 60) - (HH * 60);
+  let SS = seconds % 60;
+  let time = [
+      HH.toString().padStart(2, '0'),  // заполнение строки слева, до длины 2, 0 - то что добавляется
+      MM.toString().padStart(2, '0'),
+      SS.toString().padStart(2, '0')
+      ].join(':');
+   return time;
+}
+
