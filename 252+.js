@@ -275,3 +275,24 @@ function alphabetPosition(text) {
   return str;
 }
  
+//275  The Hashtag Generator  5kyu
+
+function generateHashtag (str) {
+  str = str.replace(/ +/g, ' ').trim();   // убираем все лишние пробелы
+   let arr = str.split('');
+   let arr1 = ['#'];
+   if (str == '' || str.length >= 140 || str == '#') return false;
+   for (let i = 0; i<arr.length; i++){
+     if ( arr[0] == arr[0].toLowerCase()){
+       arr[0] = arr[0].toUpperCase();
+       arr1.push(arr[0]);
+     } else if( arr[i] == ' '){
+       arr[i+1] = arr[i+1].toUpperCase();
+       continue;
+     } else {
+       arr1.push(arr[i]);
+     }
+   }
+   let string = arr1.join('');
+   return string;
+ }
