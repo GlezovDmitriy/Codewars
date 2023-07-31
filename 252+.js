@@ -256,3 +256,22 @@ function humanReadable (seconds) {
    return time;
 }
 
+//274   заменить каждую букву ее позицией в алфавите.
+
+function alphabetPosition(text) {
+  let alph = ['a','b','c','d','e','f','g','h','i','j','k','l','m',
+              'n','o','p','q','r','s','t','u','v','w','x','y','z'];
+  let arr1 =[];
+  let arr = text.toLowerCase().split('');
+  for (let i = 0; i<arr.length; i++){
+    if( arr[i] == ' ' || alph.indexOf(arr[i]) == -1){
+      continue;
+    } else {
+      arr1.push(alph.indexOf(arr[i])+1);
+    }
+    
+  }
+  let str = arr1.join(' ');
+  return str;
+}
+ 
