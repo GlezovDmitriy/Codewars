@@ -296,3 +296,16 @@ function generateHashtag (str) {
    let string = arr1.join('');
    return string;
  }
+
+//276
+
+function race(v1, v2, g) {
+  if (v1 > v2) return null;
+  let time = g/(v2-v1)*60*60;
+  let h = Math.floor(time/60/60);
+  let m = Math.floor((time - h*60*60)/60);
+  let s = Math.floor(time - h*60*60 - m*60);
+  return [h, m, s]
+ }
+
+ 
