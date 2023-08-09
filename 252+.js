@@ -308,4 +308,38 @@ function race(v1, v2, g) {
   return [h, m, s]
  }
 
- 
+//277
+
+function dashatize(num) {
+  if ( Number.isNaN(num) == true) return 'NaN';
+  let arr = num.toString().split('');
+  let array = [];
+    for (i=0; i< arr.length; i++){
+    if (arr[i] == '-') continue;
+    else if ( arr[i] % 2 == 0){
+      array.push(arr[i]);
+    } else if (arr[i] % 2 !== 0){
+      array.push('-'+ arr[i] + '-');
+    }
+  }
+  let newArr = array.join('').split('');
+  
+  if (newArr[0] == '-'){
+    newArr.shift();
+  }  
+  
+  if ( newArr[newArr.length - 1] == '-'){
+    newArr.pop();
+  }
+  
+  let result = [];
+  for (j=0; j<newArr.length; j++){
+    if (newArr[j] == '-' && newArr[j+1] == '-') continue;
+    else 
+      result.push(newArr[j]);
+  }
+  
+  return result.join('');
+}
+
+//278
