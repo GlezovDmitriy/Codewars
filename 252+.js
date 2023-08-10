@@ -342,4 +342,18 @@ function dashatize(num) {
   return result.join('');
 }
 
-//278
+//278 которая проверяет, имеют ли два массива «одинаковые» элементы с одинаковыми кратностями
+
+function comp(array1, array2){
+  if (array1 == [] || array2 == []
+     || array1 == null || array2 == null){
+    return false;
+  }
+  array1.sort(function sorter(a,b){return (a-b)});
+  array2.sort(function sorter(a,b){return (a-b)});
+  for (let i = 0; i < array1.length; i++){
+    if ( Math.pow(array1[i], 2) == array2[i]) continue;
+    else return false;
+  }
+  return true;
+}
