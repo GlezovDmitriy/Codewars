@@ -357,3 +357,18 @@ function comp(array1, array2){
   }
   return true;
 }
+//279 Сумма без наибольшего и наименьшего числа
+function sumArray(arr) {
+  if (arr === null || arr === undefined ) return 0;
+  let maxV = Math.max(...arr);
+  let minV = Math.min(...arr);
+  let sum = 0;
+  for (let i=0; i<arr.length; i++){
+    sum+= arr[i];
+  }
+  let number = sum - minV - maxV
+  if (arr.length === 0
+      ||arr.length === 1
+      ||arr.length === 2) return 0;
+  else return number;
+}
