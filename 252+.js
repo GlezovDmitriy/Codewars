@@ -389,4 +389,9 @@ function minMax(arr){
   return [minValue,maxValue]; // fix me!
 }
 
-//282
+//282 Обнаружение анаграмм
+var isAnagram = function(test, original) {
+  let one = test.toLowerCase().split('').sort().toString()
+  let two = original.toLowerCase().split('').sort().toString()
+  return(one === two)
+};
