@@ -382,3 +382,11 @@ function openOrSenior(data){
   }
   return arr
 }
+//281 The highest profit wins!
+function minMax(arr){
+  let maxValue = Math.max(...arr)
+  let minValue = Math.min(...arr)
+  return [minValue,maxValue]; // fix me!
+}
+
+//282
