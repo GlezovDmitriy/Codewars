@@ -1,42 +1,24 @@
- let state= [
-    // студенты могут поменять имя/возраст/количество объектов, _id должны быть целочисленные
-    {_id: 0, name: 'Кот', age: 3},
-    {_id: 1, name: 'Александр', age: 66},
-    {_id: 2, name: 'Коля', age: 16},
-    {_id: 3, name: 'Виктор', age: 44},
-    {_id: 4, name: 'Дмитрий', age: 40},
-    {_id: 5, name: 'Ирина', age: 55},
-]
- let state2= [
-     // студенты могут поменять имя/возраст/количество объектов, _id должны быть целочисленные
-     {_id: 0, name: 'Кот', age: 3},
-     {_id: 1, name: 'Александр', age: 66},
-     {_id: 2, name: 'Коля', age: 16},
-     {_id: 3, name: 'Виктор', age: 44},
-     {_id: 4, name: 'Дмитрий', age: 40},
-     {_id: 5, name: 'Ирина', age: 55},
- ]
- let state3= [
-     // студенты могут поменять имя/возраст/количество объектов, _id должны быть целочисленные
-     {_id: 0, name: 'Кот', age: 3},
-     {_id: 1, name: 'Александр', age: 66},
-     {_id: 2, name: 'Коля', age: 16},
-     {_id: 3, name: 'Виктор', age: 44},
-     {_id: 4, name: 'Дмитрий', age: 40},
-     {_id: 5, name: 'Ирина', age: 55},
- ]
- console.log(state)
- let newState = state.sort((a,b)=>{
-     if (a.name < b.name) return -1
-     /*if (a.name > b.name) return 1
-     else return 0*/
- })
- console.log(newState)
- let newState2 = state2.sort((a,b)=>{
-     if (a.name > b.name) return -1
-     /*if (a.name < b.name) return 1
-     else return 0*/
- })
- console.log(newState2)
- let newState3 = state3.filter(u => u.age >= 18)
- console.log(newState3)
+
+//([[45, 12],[55,21],[19, -2],[104, 20]]),['Open', 'Senior', 'Open', 'Senior'])
+//let data = [[45, 12],[55,21],[19, -2],[104, 20]]
+//let data = [[3, 12],[55,1],[91, -2],[53, 23]]
+//[[59,-2],[72,10],[76,5],[47,13],[44,-1],[27,15],[18,-2]]: expected
+// [ 'Open', 'Open', 'Open', 'Open', 'Open', 'Open', 'Open' ]
+//to deeply equal [ 'Open', 'Senior', 'Open', 'Open', 'Open', 'Open', 'Open' ]
+let data = [[59,-2],[72,10],[76,5],[47,13],[44,-1],[27,15],[18,-2]]
+console.log(data[0][0])
+console.log(data[0][1])
+console.log(data.length)
+
+function openOrSenior(data){
+
+    let arr = [];
+    console.log(arr)
+    for (let i = 0; i < data.length; i++) {
+        if (data[i][0] >= 55 && data[i][1] >= 12)  arr.push('Senior') ;
+        else arr.push('Open');
+    }
+return arr
+
+}
+openOrSenior(data)
