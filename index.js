@@ -1,8 +1,8 @@
 // write the function isAnagram
-var isAnagram = function(test, original) {
-let one = test.toLowerCase().split('').sort().toString()
-let two = original.toLowerCase().split('').sort().toString()
-    return(one === two)
-};
+function isItLetter(character) {
+    //return character === character.toLowerCase();
+    return isNaN(character);
+}
 
-console.log(isAnagram("foefet", "toffee"))
+console.log (isItLetter('a'))
+console.log (isItLetter(4))
