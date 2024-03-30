@@ -396,9 +396,20 @@ var isAnagram = function(test, original) {
   return(one === two)
 };
 
-//283
+//283 функция возвращает массив/список чисел без последнего элемента
 function withoutLast(arr) {
   // Fix it
   //arr.pop(); // removes the last element
   return arr.slice(0, arr.length-1);
+}
+//284 How long should you cook this for?
+function cookingTime(neededPower, minutes, seconds, power) {
+  let nP = neededPower.substring(0, neededPower.length - 1)
+  let p = power.substring(0, power.length - 1)
+  //let timeInSeconds = p * (minutes * 60 + seconds) / nP;
+  let timeInSeconds = nP * (minutes * 60 + seconds) / p;
+  let timeRound = Math.ceil(timeInSeconds);
+  let min = Math.floor(timeRound / 60)
+  let sec = timeRound - (min * 60)
+  return `${min} minutes ${sec} seconds`
 }
