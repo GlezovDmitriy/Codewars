@@ -424,3 +424,16 @@ const f = (str)=>{
   }
   return newArr.join('');
 }
+
+//286 isogram
+function isIsogram(str){
+  const letters = {};
+  for (let i = 0; i < str.length; i++) {
+    const letter = str[i].toLowerCase();
+    if (letters[letter]) {
+      return false;
+    }
+    letters[letter] = true;
+  }
+  return true;
+}
