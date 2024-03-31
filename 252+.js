@@ -413,3 +413,14 @@ function cookingTime(neededPower, minutes, seconds, power) {
   let sec = timeRound - (min * 60)
   return `${min} minutes ${sec} seconds`
 }
+//285
+const f = (str)=>{
+  let arr = str.split('');
+  let newArr = []
+  for (let i = 0; i < arr.length; i++){
+    (arr[i-1] === ' '
+        ? newArr.push(arr[i].toUpperCase())
+        : newArr.push(arr[i]))
+  }
+  return newArr.join('');
+}
