@@ -1,10 +1,10 @@
 
-function inAscOrder(arr) {
-    for (let i=0; i<arr.length-1; i++){
-        if (arr[i] < arr[i+1]) continue
-        else return false
+function sumOfMinimums(arr) {
+    let sum = 0;
+    for(let i =0; i<arr.length; i++){
+        sum+= Math.min(...arr[i])
     }
-    return true
+    return sum
 }
 
-console.log(inAscOrder([1, 2, 4, 7, 19]))
+console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
