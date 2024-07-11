@@ -1,10 +1,11 @@
-
-function sumOfMinimums(arr) {
-    let sum = 0;
-    for(let i =0; i<arr.length; i++){
-        sum+= Math.min(...arr[i])
-    }
-    return sum
+function gimme(triplet) {
+    if (triplet[0] > triplet[1] && triplet[0] < triplet[2]) return 0
+    else if (triplet[0] < triplet[1] && triplet[0] > triplet[2]) return 0
+    else if (triplet[1] > triplet[0] && triplet[1] < triplet[2]) return 1
+    else if (triplet[1] < triplet[0] && triplet[1] > triplet[2]) return 1
+    else return 2
 }
 
-console.log(sumOfMinimums([[7, 9, 8, 6, 2], [6, 3, 5, 4, 3], [5, 8, 7, 4, 5]]))
+console.log(gimme([5, 2, 1]))
+console.log(gimme([5, 6, 8]))
+console.log(gimme([5, 21, 8]))
