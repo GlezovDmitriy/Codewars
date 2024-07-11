@@ -464,3 +464,9 @@ function gimme(triplet) {
   else if (triplet[1] < triplet[0] && triplet[1] > triplet[2]) return 1
   else return 2
 }
+
+//290 Gravity Flip
+const flip=(d, a)=>{
+  if (d == 'R') return a.sort((a, b) => a - b);
+  else if( d == 'L') return a.sort((a, b) => b - a);
+}

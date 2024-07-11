@@ -1,11 +1,4 @@
-function gimme(triplet) {
-    if (triplet[0] > triplet[1] && triplet[0] < triplet[2]) return 0
-    else if (triplet[0] < triplet[1] && triplet[0] > triplet[2]) return 0
-    else if (triplet[1] > triplet[0] && triplet[1] < triplet[2]) return 1
-    else if (triplet[1] < triplet[0] && triplet[1] > triplet[2]) return 1
-    else return 2
+const flip=(d, a)=>{
+   if (d == 'R') return a.sort((a, b) => a - b);
+   else if( d == 'L') return a.sort((a, b) => b - a);
 }
-
-console.log(gimme([5, 2, 1]))
-console.log(gimme([5, 6, 8]))
-console.log(gimme([5, 21, 8]))
