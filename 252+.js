@@ -470,3 +470,9 @@ const flip=(d, a)=>{
   if (d == 'R') return a.sort((a, b) => a - b);
   else if( d == 'L') return a.sort((a, b) => b - a);
 }
+
+//291 Round up to the next multiple of 5
+function roundToNext5(n){
+  if (n === 0) return 0
+  return (Math.ceil(n/5)*5)
+}
