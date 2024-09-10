@@ -476,3 +476,8 @@ function roundToNext5(n){
   if (n === 0) return 0
   return (Math.ceil(n/5)*5)
 }
+
+//292 Two Oldest Ages
+function twoOldestAges(ages){
+  return ages.sort((a,b)=>a-b).slice(ages.length-2,ages.length)
+}
